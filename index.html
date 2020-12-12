@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Mathias Minacapilli</title>
+
+    <base href="/">
+
+    <!-- Config para el favicon -->
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="assets/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="assets/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Fontawesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <!-- Own styles -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/timeline.css">
+
+
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="blog-header py-3 ">
+            <div class="row flex-wrap justify-content-between align-items-center">
+                <div class="col-12 col-md-4 pt-1">
+                    <a class="text-muted" href="mailto:mathiasminacapilli@gmail.com">Contacto</a>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <a class="blog-header-logo text-dark" href="/">Mathias Minacapilli</a>
+                </div>
+                <div class="col-12 col-md-4 d-flex justify-content-end align-items-center">
+                    <!-- <a class="text-muted" href="#" aria-label="Search">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                </a>
+                <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a> -->
+                    <a class="btn btn-sm btn-outline-secondary mr-1"
+                        href="https://www.linkedin.com/in/mathias-minacapilli-5258ab177/" target="_blank">
+                        <i class="fab fa-linkedin" id="linkedin"></i>
+                    </a>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/MathiasMinacapilli"
+                        target="_blank">
+                        <i class="fab fa-github" id="github"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation -->
+        <div class="nav-scroller py-1 mb-2">
+            <nav id="navigation" class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" href="#">Home</a>
+                <a class="p-2 text-muted" href="#">Proyectos</a>
+                <a class="p-2 text-muted" href="http://blog.mathiasminacapilli.com">Blog</a>
+                <!-- <a class="p-2 text-muted" href="{% url 'courses:list' %}">Cursos</a>-->
+            </nav>
+        </div>
+
+    </div>
+
+    <main>
+        <section>
+            <div class="home-parallax"></div>
+        </section>
+        <!-- Presentation -->
+        <section class="presentation" id="presentation">
+            <div class="container clearfix">
+                <h2>Presentación</h2>
+                <div id="main-img-wrapper">
+                    <img src="img/face.jpg" alt="face">
+                </div>
+                <div id="about-me-wrapper">
+                    <ul>
+                        <li><b>Nombre</b>: Mathias Minacapilli</li>
+                        <li><b>Nacimiento:</b> 25/03/1999</li>
+                        <li><b>Nacionalidad:</b> Uruguayo</li>
+                        <li><b>Estudio:</b> Cursando el séptimo semestre de la carrera Ingenieria en Computación
+                            (UdelaR) <a href="#" onclick="window.open(`{% static 'scholarship.pdf' %}`);">[Click para
+                                ver mi
+                                escolaridad]</a></li>
+                        <li><b>Otros estudios</b>: Exámen FCE (First Certificate in English)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Knowledge/Expirience -->
+        <section class="bg-dark" id="knowledge-experience">
+            <div class="container">
+                <h2>Conocimientos y Experiencia</h2>
+                <div>
+                    <ul class="" id="knowledge">
+                        <li>
+                            <p id="html" class="numero">8.4</p>HTML/CSS/JS
+                        </li>
+                        <li>
+                            <p id="python" class="numero">8.5</p>Python
+                        </li>
+                        <li>
+                            <p id="django" class="numero">8.8</p>Django/DRF
+                        </li>
+                        <li>
+                            <p id="react" class="numero">8.9</p>React
+                        </li>
+                        <li>
+                            <p id="c" class="numero">9.0</p>C/C++
+                        </li>
+                        <li>
+                            <p id="angular" class="numero">5.0</p>Angular
+                        </li>
+                        <li>
+                            <p id="sql" class="numero">9.5</p>SQL
+                        </li>
+                        <li>
+                            <p id="nodejs" class="numero">4.6</p>Nodejs
+                        </li>
+                        <li>
+                            <p id="php" class="numero">8.0</p>PHP
+                        </li>
+                        <li>
+                            <p id="java" class="numero">7.1</p>Java
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience -->
+        <section>
+            <!-- work experience -->
+            <div>
+                <h2 class="text-center">Experiencia laboral</h2>
+                <div class="timeline">
+                    <div class="container-timeline right">
+                        <div class="content">
+                            <h3>Agosto 2020 - Actualidad</h3>
+                            <p>
+                                <b>Analista de Desarrollo</b> – <a href="https://www.mercadolibre.com.uy"
+                                    target="_blank" style="color: white;">Mercado Libre</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-timeline left">
+                        <div class="content">
+                            <h3>Setiembre 2019 - Julio 2020</h3>
+                            <p>
+                                <b>Desarrollador de Software</b> – <a href="https://www.asapdevelopers.com/"
+                                    target="_blank" style="color:white;">asapdevelopers</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-timeline right">
+                        <div class="content">
+                            <h3>Diciembre 2018 - Agosto 2019</h3>
+                            <p>
+                                <b>Asistente de Sistemas</b> – <a href="https://www.movie.com.uy" target="_blank"
+                                    style="color: white;">Movie</a> (Montevideo Shopping)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="container-timeline left">
+                        <div class="content">
+                            <h3>Octubre 2018 - Noviembre 2018</h3>
+                            <p>
+                                <b>Pasantía Asistente de Sistemas</b> – <a href="https://www.movie.com.uy"
+                                    target="_blank" style="color: white;">Movie</a> (Montevideo Shopping)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-dark">
+            <!-- courses -->
+            <div class="container">
+                <h2 class="text-center">Cursos tomados</h2>
+                <ul>
+                    <li>
+                        <p>Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL <a
+                                href="https://www.udemy.com/course/desarrollo-web-completo-con-html5-css3-js-php-y-mysql/"
+                                target="_blank" style="color: white;">(Ver curso)</a></p>
+                    </li>
+                    <li>
+                        <p>Master en PHP, SQL, POO, MVC, Laravel, Symfony 4, WordPress+ <a
+                                href="https://www.udemy.com/course/master-en-php-sql-poo-mvc-laravel-symfony-4-wordpress/"
+                                target="_blank" style="color: white;">(Ver curso)</a></p>
+                    </li>
+                    <li>
+                        <p>React - The Complete Guide (incl Hooks, React Router, Redux) <a
+                                href="https://www.udemy.com/course/react-the-complete-guide-incl-redux/" target="_blank"
+                                style="color: white;">(Ver curso)</a></p>
+                    </li>
+                    <li>
+                        <p>Python and Django Full Stack Web Developer Bootcamp <a
+                                href="https://www.udemy.com/course/python-and-django-full-stack-web-developer-bootcamp/"
+                                target="_blank" style="color: white;">(Ver curso)</a></p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="sobre-mi" id="sobre-mi">
+            <div class="container">
+                <h2>Sobre mi</h2>
+                <div class="sobre-mi-imgs">
+                    <ul>
+                        <li><img src="img/handball.jpg" alt="hb"></li>
+                        <li><img src="img/music.jpg" alt="music"></li>
+                        <li><img src="img/family.jpg" alt="family"></li>
+                    </ul>
+                </div>
+                <div class="sobre-mi-contenido">
+                    <p>
+                        Mi nombre es Mathias Minacapilli, tengo 21 años
+                        y soy de Uruguay.
+                        <br>
+                        Me considero una persona bastante activa, es decir, no puedo parar de leer,
+                        aprender, y buscar cosas que me interesan y sobre las cuales quiero conocer.
+                        <br>
+                        Desde chico me gustaron mucho las ciencias (todas las ramas),
+                        la música, la magia y obviamente las computadoras.
+                        <br>
+                        Siempre tuve interés por aprender y saber como funcionan las computadoras,
+                        las cosas eléctricas/electronicas, y todo lo relacionado.
+                        Por eso es que en bachillerato seguí la orientación
+                        Científico/Ingeniería y actualmente me encuentro cursando
+                        el cuarto año de la carrera <a
+                            href="https://www.fing.edu.uy/carrerasgrado/ingenieria-en-computacion"
+                            target="_blank">Ingeniería en Computación</a>
+                        en la UdelaR (Universidad de la República).
+                        <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Software Projects -->
+        <section class="proyectos-de-software bg-dark" id="proyectos-de-software">
+            <div class="container">
+                <h2>Proyectos</h2>
+                <p>He participado en varios <a href="{% url 'projects:list' %}">proyectos</a> para empresas, además de
+                    proyectos personales de software, y proyectos por aprendizaje y compartir conocimiento.</p>
+                <!-- <div class="projects">
+                <div class="project secondary-bg-dark">
+                    <h4><a href="#">Mathias Minacapilli</a></h4>
+                    <p>
+                        This page.
+                    </p>
+                    <a href="<?=PROJECTS_ROUTE?>"><i class="fas fa-plus"></i> Ampliar</a>
+                </div>
+                <div class="project secondary-bg-dark">
+                    <h4><a href="#">Orders Admin</a></h4>
+                    <p>
+                        Aplicación para controlar las
+                        órdenes (pedidos) de una empresa.
+                    </p>
+                    <a href="<?=PROJECTS_ROUTE?>"><i class="fas fa-plus"></i> Ampliar</a>
+                </div>
+                <div class="project secondary-bg-dark">
+                    <h4><a href="#">My personal environment</a></h4>
+                    <p>
+                        Página con el prósito de tener un ámbiente
+                        propio en el cual llevar control desde tus gastos
+                        hasta tus tareas diarias a realizar.
+                    </p>
+                    <a href="http://mathiasminacapilli.pythonanywhere.com/" target="_blank"><i class="far fa-file"
+                            id="github"></i> Ver página</a>
+                    <a href="<?=PROJECTS_ROUTE?>"><i class="fas fa-plus"></i> Ampliar</a>
+                </div>
+            </div>
+            <h2>Proyectos en los que he Participado</h2>
+            <div class="projects">
+                <div class="project secondary-bg-dark">
+                    <h4><a href="http://www.monfic.com.uy" target="_blank">Monfic</a></h4>
+                    <p>
+                        Sitio el cual contiene la información del evento/ciclo de cine
+                        monfic realizado en Uruguay en los cines de Movie.
+                    </p>
+                    <a href="http://www.monfic.com.uy" target="_blank"><i class="far fa-file" id="github"></i> Ver
+                        página</a>
+                    <a href="<?=PROJECTS_ROUTE?>"><i class="fas fa-plus"></i> Ampliar</a>
+                </div>
+                <div class="project secondary-bg-dark">
+                    <h4><a href="http://www.monfic.com.uy" target="_blank">Liga cooperativa pre senior de futbol</a>
+                    </h4>
+                    <p>
+                        Pagina que administra una liga uruguaya de futbol mostrando resultados, posiciones,
+                        contabilidad, entre otras funcionalidades.
+                    </p>
+                    <a href="http://www.ligacooperativapreseniordefutbol.com.uy" target="_blank">
+                        <i class="far fa-file"></i> Ver página</a>
+                    <a href="<?=PROJECTS_ROUTE?>"><i class="fas fa-plus"></i> Ampliar</a>
+                </div>
+            </div> -->
+
+            </div><!-- /container -->
+        </section>
+
+        <!-- Social -->
+        <section class="social" id="social">
+            <div class="container">
+                <h2>Social</h2>
+                <p>Puedes seguirme en las redes sociales!</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/mathias-minacapilli-5258ab177/" target="_blank">
+                            <i class="fab fa-linkedin" id="linkedin"></i>
+                        </a></li>
+                    <li><a href="https://twitter.com/mathminacapilli" target="_blank">
+                            <i class="fab fa-twitter" id="twitter"></i>
+                        </a></li>
+                    <li><a href="https://www.instagram.com/mathiasminacapilli/?hl=es-la" target="_blank">
+                            <i class="fab fa-instagram" id="instagram"></i>
+                        </a></li>
+                    <li><a href="https://github.com/MathiasMinacapilli" target="_blank">
+                            <i class="fab fa-github" id="github"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Desarrollado por Mathias Minacapilli &copy; 2020</p>
+    </footer>
+
+    <script src="js/home.js"></script>
+    <script src="js/navigation.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
