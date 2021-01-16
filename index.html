@@ -66,7 +66,8 @@
         <div class="nav-scroller py-1 mb-2">
             <nav id="navigation" class="nav d-flex justify-content-between">
                 <a class="p-2 text-muted" href="#">Home</a>
-                <a class="p-2 text-muted" href="#">Proyectos</a>
+                <a class="p-2 text-muted" href="#projects">Proyectos</a>
+                <a class="p-2 text-muted" href="#resources">Recursos</a>
                 <a class="p-2 text-muted" href="http://blog.mathiasminacapilli.com">Blog</a>
                 <!-- <a class="p-2 text-muted" href="{% url 'courses:list' %}">Cursos</a>-->
             </nav>
@@ -253,7 +254,7 @@
         </section>
 
         <!-- Software Projects -->
-        <section class="proyectos-de-software bg-dark" id="proyectos-de-software">
+        <section class="proyectos-de-software bg-dark" id="projects">
             <div class="container">
                 <h2>Proyectos</h2>
                 <p>He participado en varios <a href="{% url 'projects:list' %}">proyectos</a> para empresas, además de
@@ -314,6 +315,25 @@
             </div><!-- /container -->
         </section>
 
+        <section class="resources" id="resources">
+            <div class="container">
+                <h2>Recursos</h2>
+                <div style="text-align: center;">
+                    <p><b>Tomar control de nuestra situación financiera.</b> Es muy importante que tomemos consciencia
+                        y control de nuestra situación financiera y es por eso que decidí hacer <a
+                            href="https://youtu.be/B5etyD9Dk4E">este vídeo</a>
+                        para de alguna manera conscientizar, motivar, ayudar y acompañar a todos a que comiencen a tomar
+                        control de sus finanzas
+                        personales.
+                    </p>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/1BrEJ-H6yJM" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>>
+                </div>
+
+            </div>
+        </section>
+
         <!-- Social -->
         <section class="social" id="social">
             <div class="container">
@@ -339,7 +359,7 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <p>Desarrollado por Mathias Minacapilli &copy; 2020</p>
+        <p>Desarrollado por Mathias Minacapilli &copy; 2021</p>
     </footer>
 
     <script src="js/home.js"></script>
