@@ -1,0 +1,10 @@
+.projects-list {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.projects-list__project {
+  max-width: 46%;
+  margin: 0 10px;
+  color: black;
+}
