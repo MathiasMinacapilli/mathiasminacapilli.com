@@ -8,3 +8,8 @@
   margin: 0 10px;
   color: black;
 }
+@media only screen and (max-width: 768px) {
+  .projects-list__project {
+    max-width: 100%;
+  }
+}
